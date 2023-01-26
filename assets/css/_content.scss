@@ -73,7 +73,7 @@ a {
     text-align: center;
     padding-top: 30px;
     color: map-get(c.$color, "color__negro");
-    font-size: 54px;
+    font-size: 44px;
     text-shadow: 0px 0px 5px map-get(c.$color, "color__negro");
     /* background:linear-gradient(#333333 0%, white 50%, #333333 100%); */
 }
@@ -89,7 +89,7 @@ a {
 .h2__oscura {
     @extend .h1__new;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 30px;
 
 
 }

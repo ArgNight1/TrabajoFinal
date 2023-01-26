@@ -60,7 +60,7 @@ a {
   text-align: center;
   padding-top: 30px;
   color: #0f0e17;
-  font-size: 54px;
+  font-size: 44px;
   text-shadow: 0px 0px 5px #0f0e17;
   /* background:linear-gradient(#333333 0%, white 50%, #333333 100%); */
 }
@@ -74,7 +74,7 @@ a {
 
 .h2__oscura {
   font-weight: 500;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .oculta__mobile {
@@ -358,6 +358,7 @@ footer section div a:hover {
   height: 400px;
   border-radius: 6px;
   box-shadow: 0 0 6px 3px #0f0e17;
+  display: none;
 }
 
 form {
@@ -415,6 +416,9 @@ textarea {
 /*Fin Form*/
 /* vista de tablet */
 @media only screen and (min-width: 768px) {
+  .h1__new {
+    font-size: 54px;
+  }
   .mi__card {
     background: #0f0e17;
     margin-top: 20px;
@@ -459,6 +463,9 @@ textarea {
     border: 3px solid #fffffe;
     border-radius: 10px;
     display: block;
+  }
+  .alinear__img__frm img {
+    display: inline-block;
   }
 }
 @media only screen and (min-width: 992px) {

@@ -3,6 +3,10 @@
 /* vista de tablet */
 @media only screen and (min-width: 768px) {
 
+    .h1__new {
+        font-size: 54px;
+    }
+    
     .mi__card {
 
         background: map-get(c.$color, "color__negro");
@@ -54,6 +58,10 @@
 
     }
 
+    .alinear__img__frm img {
+        display: inline-block;
+    }
+
 
 }
 
@@ -76,26 +84,6 @@
 }
 
 @media only screen and (min-width: 1280px) {
-
-    //el siguiente codigo, hace que en la vista de escritorio el menu aparezca debajo del sileder y en tablets o celulares, arriba de todo.
-    //a mi me gustaba como quedaba
-
-    // #container__index {
-    //     display: grid;
-    //     grid-template-columns: 100%;
-    //     grid-template-rows: auto auto auto auto auto auto;
-    //     grid-template-areas:
-
-
-    //         "gheader"
-    //         "gmenu" 
-    //         "gmain"
-    //         "gvideos"
-    //         "gsponsor"
-    //         "gfooter"
-    //     ;
-    // }
-
 
     .mi__card {
 
