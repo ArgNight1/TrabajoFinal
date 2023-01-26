@@ -1,0 +1,66 @@
+@use '_colores' as c;
+
+/*Empieza el footer*/
+
+
+.alinea__footer2 {
+    height: 0px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    background-color: map-get(c.$color, "color__negro");
+}
+
+footer div a img {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+
+    // box-shadow: 0 0 6px 0 map-get(c.$color,"fondo__boton");
+    &:hover {
+        width: 35px;
+        height: 35px;
+        border-radius: 3px;
+        // box-shadow: 0 0 6px 0 map-get(c.$color,"fondo__boton");
+    }
+}
+
+
+footer section div a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+
+    &:hover {
+        color: #fff;
+        font-size: 16px;
+        text-shadow: 3px 3px 5px map-get(c.$color, "fondo__boton");
+    }
+}
+
+
+.pie {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: map-get(c.$color, "color_txt_boton");
+
+    a {
+        text-decoration: none;
+        color: map-get(c.$color, "color__negro");
+        font-size: 12px;
+
+        &:hover {
+            color: map-get(c.$color, "fondo__boton");
+
+            font-size: 14px;
+            font-style: oblique;
+            text-shadow: 10px 10px 5px black;
+        }
+    }
+}
+
+
+
+
+/*aca termina el footer*/

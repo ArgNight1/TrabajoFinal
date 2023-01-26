@@ -1,0 +1,164 @@
+@use '_colores' as c;
+
+/* vista de tablet */
+@media only screen and (min-width: 768px) {
+
+    .mi__card {
+
+        background: map-get(c.$color, "color__negro");
+        margin-top: 20px;
+        display: flex;
+        width: 48%;
+        /*editar en escritorio*/
+        height: 320px;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 10px;
+        box-shadow: 0 0 6px 0 map-get(c.$color, "color__negro");
+
+        img {
+            width: 150px;
+            /*editar en escritorio a 150*/
+            height: 250px;
+            object-fit: cover;
+            border: 3px solid map-get(c.$color, "color_txt_boton");
+            border-radius: 10px;
+            display: block;
+        }
+
+    }
+
+    .card__mobile {
+        /* esta card se habilita en tablet o escritorio*/
+
+        background: map-get(c.$color, "color__negro");
+        margin-top: 20px;
+        display: flex;
+        width: 48%;
+        /*editar en escritorio*/
+        height: 320px;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 10px;
+        box-shadow: 0 0 6px 0 map-get(c.$color, "color__negro");
+
+        img {
+            width: 150px;
+            /*editar en escritorio a 150*/
+            height: 250px;
+            object-fit: cover;
+            border: 3px solid map-get(c.$color, "color_txt_boton");
+            border-radius: 10px;
+            display: block;
+        }
+
+    }
+
+
+}
+
+@media only screen and (min-width: 992px) {
+    .oculta__mobile {
+        display: inline-block;
+
+        &:hover {
+            box-shadow: 0px -9px 6px 8px map-get(c.$color, "fondo__boton");
+        }
+
+    }
+
+    .oculta__pc {
+        display: none;
+
+
+
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+
+    //el siguiente codigo, hace que en la vista de escritorio el menu aparezca debajo del sileder y en tablets o celulares, arriba de todo.
+    //a mi me gustaba como quedaba
+
+    // #container__index {
+    //     display: grid;
+    //     grid-template-columns: 100%;
+    //     grid-template-rows: auto auto auto auto auto auto;
+    //     grid-template-areas:
+
+
+    //         "gheader"
+    //         "gmenu" 
+    //         "gmain"
+    //         "gvideos"
+    //         "gsponsor"
+    //         "gfooter"
+    //     ;
+    // }
+
+
+    .mi__card {
+
+        background: map-get(c.$color, "color__negro");
+        margin-top: 20px;
+        display: flex;
+        width: 46%;
+        /*editar en escritorio*/
+        height: 300px;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 10px;
+        box-shadow: 0 0 6px 0 map-get(c.$color, "color__negro");
+
+        img {
+            width: 150px;
+            /*editar en escritorio a 150*/
+            height: 250px;
+            object-fit: cover;
+            border: 3px solid map-get(c.$color, "color_txt_boton");
+            border-radius: 10px;
+            display: block;
+        }
+
+
+    }
+
+    .card__mobile {
+        /* esta card se habilita en tablet o escritorio*/
+        //aca uso include por que no funciona el @extend
+
+        background: map-get(c.$color, "color__negro");
+        margin-top: 20px;
+        display: flex;
+        width: 46%;
+        /*editar en escritorio*/
+        height: 300px;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 10px;
+        box-shadow: 0 0 6px 0 map-get(c.$color, "color__negro");
+
+        img {
+            width: 150px;
+            /*editar en escritorio a 150*/
+            height: 250px;
+            object-fit: cover;
+            border: 3px solid map-get(c.$color, "color_txt_boton");
+            border-radius: 10px;
+            display: block;
+        }
+
+    }
+
+
+    .div__alinear__mobile {
+        /* estye video se habilita con escritorio y tablet*/
+        display: inline-block;
+
+
+    }
+
+    .centrar__img img {
+        width: 500px;
+    }
+}
